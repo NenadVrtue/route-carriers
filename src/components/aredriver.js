@@ -24,13 +24,17 @@ const Aredriver = () => {
                     Apply Now
                   </Link>
             </div>
-
+            <div data-sal="slide-left"
+            data-sal-delay="700"
+             data-sal-easing="ease"
+             >
             <StaticImage src="../images/truck-drive.png" alt="truck in are you a driver"
             className=""
             placeholder="tracedSVG"
             objectFit="contain"
             quality="100"
             />
+            </div>
         </section>
     )
 }
