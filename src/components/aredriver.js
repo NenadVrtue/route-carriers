@@ -4,7 +4,7 @@ import { StaticImage } from 'gatsby-plugin-image'
 
 const Aredriver = () => {
     return (
-        <section className=' mb-8  xl:mb-24 md:mt-8 lg:mt-16  flex flex-1 flex-col md:flex-row gap-x-8 gap-y-4 lg:gap-12 relative max-w-7xl mx-auto'>
+        <section className='overflow-hidden mb-8  xl:mb-24 md:mt-8 lg:mt-16  flex flex-1 flex-col md:flex-row gap-x-8 gap-y-4 lg:gap-12 relative max-w-7xl mx-auto'>
 
             
             
@@ -25,7 +25,7 @@ const Aredriver = () => {
                   </Link>
             </div>
             <div data-sal="slide-left"
-            data-sal-delay="700"
+            data-sal-delay="500"
              data-sal-easing="ease"
              >
             <StaticImage src="../images/truck-drive.png" alt="truck in are you a driver"

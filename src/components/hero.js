@@ -1,10 +1,9 @@
 import BackgroundImage from 'gatsby-background-image-es5'
 import React,{useState} from 'react'
-import Header from './header'
 import { graphql, Link, useStaticQuery } from "gatsby"
 import { getImage, StaticImage} from "gatsby-plugin-image"
 import { convertToBgImage } from "gbimage-bridge"
-import {Sidebar} from "./sidebar"
+
 
 
 
@@ -33,8 +32,9 @@ const Hero = () => {
     
     return (
       <BackgroundImage Tag="section" 
+      className="overflow-hidden"
        {...bgImage} >
-       <div className="relative h-screen" >
+       <div className="relative h-screen overflow-hidden" >
         
 
 
@@ -48,9 +48,11 @@ const Hero = () => {
            
           
           <main className=" max-w-7xl mx-auto px-8 md:px-4 xl:px-2 flex items-center justify-center h-full  w-full  2xl:max-w-7xl">
-            <div  data-sal="slide-right"
-  data-sal-delay="700"
-  data-sal-easing="ease" className="mt-80 mb-72  w-full text-left">
+            <div  data-sal="slide-left"
+                  data-sal-delay="700"
+                  data-sal-easing="ease" 
+                  className="mt-80 mb-72  w-full text-left"
+                  >
               <h1 className="font-display mx-auto  sm:w-full  text-big-m leading-none sm:text-6xl  text-white md:text-big">
                 TRANSPORTATION <br></br>
                 & LOGISTICS SERVICES
