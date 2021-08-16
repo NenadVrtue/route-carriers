@@ -9,7 +9,12 @@ const Cards = () => {
              <div className="bg-main-red w-24 h-2 my-7"></div>
              
              <div className=" lg:grid lg:grid-cols-3 gap-x-8 lg:gap-x-16 xl:justify-between xl:gap-x-28">
-                 <div className="bg-main-blue w-330 flex flex-col items-center px-5 pt-8 pb-9 justify-between my-8">
+                 <div
+                    data-sal="slide-right"
+                    data-sal-delay="500"
+                    data-sal-easing="ease"
+                    data-sal-duration= "700"
+                    className="bg-main-blue w-330 flex flex-col items-center px-5 pt-8 pb-9 justify-between my-8">
                     <StaticImage src="../images/respect.png"
                     alt="respect icon"
                     placeholder="tracedSVG"></StaticImage>
@@ -19,7 +24,12 @@ const Cards = () => {
                  </div>
                  
                  
-                 <div className="bg-main-blue w-330 flex flex-col items-center px-5 pt-8 pb-9 justify-between my-8">
+                 <div 
+                    data-sal="slide-up"
+                    data-sal-delay="500"
+                    data-sal-easing="ease"
+                    data-sal-duration= "700"
+                    className="bg-main-blue w-330 flex flex-col items-center px-5 pt-8 pb-9 justify-between my-8">
                     <StaticImage src="../images/safety.png"
                     alt="safety icon"
                     placeholder="tracedSVG"
@@ -31,7 +41,12 @@ const Cards = () => {
                  
                  
                  
-                 <div className="bg-main-blue w-330 flex flex-col items-center px-5 pt-8 pb-9 justify-between my-8">
+                 <div 
+                    data-sal="slide-left"
+                    data-sal-delay="500"
+                    data-sal-easing="ease"
+                    data-sal-duration= "700"
+                    className="bg-main-blue w-330 flex flex-col items-center px-5 pt-8 pb-9 justify-between my-8">
                     <StaticImage src="../images/pay.png"
                     alt="respect icon"
                     placeholder="tracedSVG"></StaticImage>
@@ -43,7 +58,7 @@ const Cards = () => {
              </div>
 
              <Link
-                    to="/apply-now.js"
+                    to="/apply-now"
                     className="w-48 flex items-center justify-center px-4 py-1 border-4 border-main-blue text-sub font-medium font-body text-white bg-main-blue hover:bg-white hover:border-white hover:text-main-red   "
                   >
                       Apply Now

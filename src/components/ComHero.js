@@ -9,15 +9,17 @@ const ComHero = () => {
             <StaticImage src="../images/HeroCom.png"
                     alt="company page background"
                     placeholder="tracedSVG" 
-                    className="h-full w-full">
-                        
+                    className="h-full w-full"
+                    quality="100">
+                    
                         
             </StaticImage>
 
-            <main className="absolute top-0 max-w-7xl mx-auto px-8 md:px-4 xl:px-2 flex items-center justify-center h-full  w-full 2xl:w-7xl xl:transform xl:translate-x-20  2xl:translate-x-1/4 ">
+            <main className="absolute top-0 max-w-7xl mx-auto px-8 md:px-4 xl:px-2 flex items-center justify-center h-full  w-full 2xl:w-7xl xl:transform xl:translate-x-20  2xl:translate-x-1/4 2xl:-ml-2 ">
             <div  data-sal="slide-right"
                   data-sal-delay="700"
-                  data-sal-easing="ease" 
+                  data-sal-easing="ease"
+                  data-sal-duration= "700" 
                   className="mt-80 mb-72  w-full text-left"
                   >
               <h1 className="font-display mx-auto  sm:w-full  text-big-m leading-none sm:text-6xl  text-white md:text-big">

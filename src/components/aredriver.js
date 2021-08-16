@@ -27,6 +27,7 @@ const Aredriver = () => {
             <div data-sal="slide-left"
             data-sal-delay="500"
              data-sal-easing="ease"
+             data-sal-duration= "700"
              >
             <StaticImage src="../images/truck-drive.png" alt="truck in are you a driver"
             className=""
