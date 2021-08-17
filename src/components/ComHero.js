@@ -5,7 +5,15 @@ import {Link} from 'gatsby'
 const ComHero = () => {
     return (
        
-             <div className="h-screen overflow-hidden">
+             <section className="relative h-screen overflow-hidden">
+
+               <div className="absolute z-10 bottom-4 left-1/2 -ml-4">
+          <svg width={40} height={120} xmlns="http://www.w3.org/2000/svg">
+            <path  className="animate-pulse-1" d="m36.282 0.75664c-1.0337-1.0089-2.7096-1.0089-3.7434 0l-14.01 13.673-14.01-13.673c-1.0337-1.0089-2.7097-1.0089-3.7434 0-1.0337 1.0089-1.0337 2.6445 0 3.6534l15.882 15.5c1.0337 1.0089 2.7096 1.0089 3.7433 0l15.882-15.5c1.0337-1.0089 1.0337-2.6445 0-3.6534z"  fill="#EC202B70"/>
+            <path className="animate-pulse" d="m36.282 21.423c-1.0337-1.0088-2.7096-1.0088-3.7434 0l-14.01 13.673-14.01-13.673c-1.0337-1.0088-2.7097-1.0088-3.7434 0-1.0337 1.0089-1.0337 2.6446 0 3.6534l15.882 15.5c1.0337 1.0089 2.7096 1.0089 3.7433 0l15.882-15.5c1.0337-1.0088 1.0337-2.6445 0-3.6534z"  fill="#EC202B85" />
+            <path className="animate-pulse-2" d="m36.282 42.09c-1.0337-1.0089-2.7096-1.0089-3.7434 0l-14.01 13.673-14.01-13.673c-1.0337-1.0089-2.7097-1.0089-3.7434 0-1.0337 1.0088-1.0337 2.6445 0 3.6533l15.882 15.5c1.0337 1.0089 2.7096 1.0089 3.7433 0l15.882-15.5c1.0337-1.0088 1.0337-2.6445 0-3.6533z"  fill="#EC202B" />
+          </svg>
+         </div>
             <StaticImage src="../images/HeroCom.png"
                     alt="company page background"
                     placeholder="tracedSVG" 
@@ -42,7 +50,7 @@ const ComHero = () => {
               </div>
             </div>
           </main>
-        </div>
+        </section>
         
     )
 }
