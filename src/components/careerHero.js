@@ -13,11 +13,11 @@ const CareerHero = () => {
             <path className="animate-pulse-2" d="m36.282 42.09c-1.0337-1.0089-2.7096-1.0089-3.7434 0l-14.01 13.673-14.01-13.673c-1.0337-1.0089-2.7097-1.0089-3.7434 0-1.0337 1.0088-1.0337 2.6445 0 3.6533l15.882 15.5c1.0337 1.0089 2.7096 1.0089 3.7433 0l15.882-15.5c1.0337-1.0088 1.0337-2.6445 0-3.6533z"  fill="#EC202B" />
           </svg>
          </div>
-            <StaticImage src="../images/CareerHero.png"
+            <StaticImage src="../images/careerHero.png"
                     alt="career page background"
                     placeholder="tracedSVG" 
                     className="h-full w-full"
-                    quality="100">
+                    quality="90">
                     
                         
             </StaticImage>
