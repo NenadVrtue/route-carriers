@@ -7,6 +7,10 @@ module.exports = {
       'body':['Roboto', 'sans-serif']
     },
     extend: {
+      screens:{
+        '3xl':'1700px'
+      },
+
      fontSize:{
       'big': '4.875rem',
       'big-m': '3.125rem',
@@ -33,6 +37,10 @@ module.exports = {
         'pulse-1':'pulse 1.75s cubic-bezier(0.4, 0, 0.6, 1) infinite;',
         'pulse-2':'pulse 2.25s cubic-bezier(0.4, 0, 0.6, 1) infinite;'
       },
+       translate: {
+         '1/5': '20%',
+         
+        }
       
     },
   },

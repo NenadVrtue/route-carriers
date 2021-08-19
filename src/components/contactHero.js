@@ -23,7 +23,7 @@ const ContactHero = () => {
                         
             </StaticImage>
 
-            <main className="absolute top-0 max-w-7xl mx-auto px-8 md:px-4 xl:px-2 flex items-center justify-center h-full  w-full 2xl:w-7xl xl:transform xl:translate-x-20  2xl:translate-x-1/4 2xl:-ml-2 ">
+            <main className="absolute top-0 max-w-7xl mx-auto px-8 md:px-4 xl:px-2 flex items-center justify-center h-full  w-full 2xl:w-7xl xl:transform xl:translate-x-16 2xl:translate-x-1/5 2xl:-ml-32 3xl:translate-x-1/4 3xl:-ml-2 ">
             <div  data-sal="slide-right"
                   data-sal-delay="700"
                   data-sal-easing="ease"
