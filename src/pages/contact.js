@@ -1,4 +1,5 @@
 import React from 'react'
+import ContactForm from '../components/contactForm'
 import ContactHero from '../components/contactHero'
 import Header from '../components/header'
 import Layout from '../components/layout'
@@ -8,6 +9,7 @@ const  Contact = () => {
         <Layout>
             <Header></Header>
             <ContactHero></ContactHero>
+            <ContactForm></ContactForm>
         </Layout>
     )
 }

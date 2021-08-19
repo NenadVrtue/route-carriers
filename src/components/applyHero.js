@@ -34,7 +34,7 @@ const ApplyHero = () => {
               <h1 className="font-display mx-auto  sm:w-full  text-big-m leading-none sm:text-6xl  text-white md:text-big">
                 Application Form
               </h1>
-              <p className="font-body mt-26  sm:w-full text-2xl md:text-sub mx-auto text-white font-normal max-w-xl  sm:mt-5 sm:mx-auto md:mt-5 lg:mx-0">
+              <p className="font-body mt-26  sm:w-full text-2xl  md:text-sub mx-auto text-white font-normal max-w-xl  sm:mt-5 ml-0 md:mt-5 lg:mx-0">
                 Fill out the short application form below to start the pre-qualification process.If you meet all of the requirements, a member of our team will 
                 contact you soon. 
               </p>
@@ -43,10 +43,10 @@ const ApplyHero = () => {
                 <div className="mt-9 sm:mt-10 sm:flex  lg:justify-start">
                 <div className="rounded-md shadow">
                   <Link 
-                  to="/apply-now"
+                  to="/careers"
                   className="w-4/5 sm:w-48 flex items-center justify-center px-4 py-1 border-4 border-main-red text-sub font-medium font-body text-white bg-main-red hover:bg-main-red-hover hover:border-main-red-hover   "
                   >
-                    Apply Now
+                    Learn More
                  </Link>
                 </div>
                
