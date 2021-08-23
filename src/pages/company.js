@@ -1,7 +1,7 @@
 import { StaticImage } from 'gatsby-plugin-image'
 import React from 'react'
 import ComHero from '../components/ComHero'
-import Header from '../components/header'
+import Seo from '../components/seo'
 import { Link } from 'gatsby'
 import Layout from '../components/layout'
 import Values from '../components/values'
@@ -9,7 +9,8 @@ import Values from '../components/values'
 const Company = () => {
     return (
         <Layout>
-            <Header></Header>
+            <Seo title="Company" description="This is a meta description"></Seo>
+
             <ComHero></ComHero>
 
             {/* First About Section */}
@@ -18,7 +19,7 @@ const Company = () => {
 
                 <div className="absolute w-full md:w-8/12 -z-10 h-full bg-gray-100 bottom-0 right-0"></div> 
                 <StaticImage src="../images/About1.png" alt="truck in the about section"
-                placeholder="tracedSVG"
+                placeholder="blurred"
                 className="md:w-2/4 md:my-16"
                 quality="100"
                 

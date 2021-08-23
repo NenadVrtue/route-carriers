@@ -15,7 +15,7 @@ const CareerHero = () => {
          </div>
             <StaticImage src="../images/careerHero.png"
                     alt="career page background"
-                    placeholder="tracedSVG" 
+                    placeholder="blurred" 
                     className="h-full w-full"
                     quality="90">
                     

@@ -16,8 +16,8 @@ const ContactHero = () => {
          </div>
             <StaticImage src="../images/ContactHero.png"
                     alt="career page background"
-                    placeholder="tracedSVG" 
-                    className="h-full w-full"
+                    placeholder="blurred" 
+                    className="h-full w-full z-0"
                     quality="100">
                     
                         

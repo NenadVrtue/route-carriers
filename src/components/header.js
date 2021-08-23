@@ -5,7 +5,7 @@ import { StaticImage } from "gatsby-plugin-image"
 import { VscThreeBars } from "react-icons/vsc";
 
 const Header = ({toggleSidebar}) => (
-  <header className="absolute top-0 z-10 w-full">
+  <header className="absolute top-0 z-20 w-full">
     <div
     className="  mx-auto max-w-7xl  px-4 xl:px-0  flex justify-between items-end "
     >
@@ -14,7 +14,7 @@ const Header = ({toggleSidebar}) => (
         src="../images/logo-transparent.png" 
         width={190}
         loading="eager"
-        placeholder="blurred"
+        placeholder="tracedSVG"
         alt="Route Carriers logo"
         quality="100"
         className="md:-ml-4">
@@ -30,7 +30,7 @@ const Header = ({toggleSidebar}) => (
        <Link to="/contact" className="font-body pt-12 pb-4 px-4 hover:bg-main-red" activeClassName="bg-main-red" >CONTACT</Link>
      </nav>
      
-    <button className="md:hidden mt-7 px-4" onClick={toggleSidebar}>
+    <button className="md:hidden mt-7 px-4 z-20" onClick={toggleSidebar}>
       <VscThreeBars size="2.5em" className="text-white hover:text-main-red"/>
     </button>
         

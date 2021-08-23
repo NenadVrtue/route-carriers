@@ -9,7 +9,7 @@ const ContactForm = () => {
 
             <p className="text-center font-body max-w-prose text-main-blue leading-6">If you have more questions, we’re happy to help. Simply submit your message bellow, and we’ll get back to you within 24 hours.</p>
 
-           <form className=" px-2 w-full my-8" name="Contact Form" method="POST" data-netlify="true">
+           <form className="font-body px-2 w-full my-8" name="Contact Form" method="POST" data-netlify="true">
             <input type="hidden" name="form-name" value="Contact Form" required/>
             <div className="flex flex-col mb-4">
                 <label className="text-base w-full text-body text-main-blue mb-4">Full Name</label>

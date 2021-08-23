@@ -10,7 +10,7 @@ import Aredriver from "../components/aredriver"
 
 const IndexPage = () => (
   <Layout>
-    <Seo title="Home" />
+    <Seo title="Home" description="This is a meta description" />
     
     <Hero/>
     

@@ -1,13 +1,14 @@
 import React from 'react'
+import ApplyForm from '../components/applyForm'
 import ApplyHero from '../components/applyHero'
-import Header from '../components/header'
 import Layout from "../components/layout"
 
 const ApplyNow = () => {
     return (
         <Layout>
-            <Header></Header>
+            
             <ApplyHero></ApplyHero>
+            <ApplyForm></ApplyForm>
         </Layout>
     )
 }

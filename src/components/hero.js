@@ -16,7 +16,7 @@ const Hero = () => {
             gatsbyImageData(
                 quality: 100
                 webpOptions: {quality: 100}
-                placeholder: TRACED_SVG
+                placeholder: BLURRED
       )
     }
   }

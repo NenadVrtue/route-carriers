@@ -2,7 +2,7 @@ import React from 'react'
 
 const CdlDrivers = () => {
     return (
-        <section className="py-20 flex flex-col items-center">
+        <section className="px-4 py-20 flex flex-col items-center">
             <h2 className="font-display text-4xl  lg:text-5xl text-main-blue">We Need CDL Drivers</h2>
 
             <div className="bg-main-red w-24 h-2 my-7"></div>
