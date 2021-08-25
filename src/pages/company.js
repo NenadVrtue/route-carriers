@@ -59,7 +59,7 @@ const Company = () => {
                 quality="100"
                 
                 />
-            <div className="px-8 flex-col my-12 py-4 md:w-2/4 xl:pl-20 2xl:pl-80 md:px-4  ">
+            <div className="px-8 flex-col my-12 py-4 md:w-2/4 xl:pl-20 2xl:pl-20 md:px-4 xl:transform xl:translate-x-20  2xl:translate-x-1/5 2xl:-ml-32 3xl:translate-x-1/4 3xl:-ml-2 ">
                 <h2 data-sal="slide-right"
                   data-sal-delay="700"
                   data-sal-easing="ease"
