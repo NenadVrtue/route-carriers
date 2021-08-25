@@ -2,9 +2,10 @@ import React from 'react'
 
 const ApplyForm = () => {
     return (
-        <section className="py-20    bg-main-blue">
+        <section id="apply" className="py-20    bg-main-blue">
+           
             <div className="max-w-2xl mx-auto flex flex-col items-center">
-            <h2 className="font-display text-4xl  lg:text-5xl text-white">application form</h2>
+             <a href="#apply"><h2 className="font-display text-4xl  lg:text-5xl text-white">application form</h2></a>
 
             <div className="bg-main-red w-24 h-2 my-7"></div>
 
