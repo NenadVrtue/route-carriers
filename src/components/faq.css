@@ -1,0 +1,24 @@
+.accordion__button::before {
+  border-bottom: 2px solid red;
+  border-right: 2px solid red;
+  padding-bottom: 5px;
+}
+
+.accordion__button {
+  background-color: white;
+  font-family: "Roboto", sans-serif;
+  color: #01143a;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.accordion__button:hover {
+  background-color: white;
+}
+
+.accordion__panel {
+  margin-left: 20px;
+  font-family: "Roboto", sans-serif;
+  color: #01143a;
+  padding-top: 8px;
+}
