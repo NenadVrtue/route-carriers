@@ -16,7 +16,7 @@ const ComHero = () => {
          </div>
             <StaticImage src="../images/HeroCom.png"
                     alt="company page background"
-                    placeholder="tracedSVG" 
+                    placeholder="blurred" 
                     className="h-full w-full"
                     quality="100">
                     
