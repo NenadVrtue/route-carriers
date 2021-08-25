@@ -26,7 +26,7 @@ const Table = () => {
             <div className=" pb-16" >
                 <h2 className="text-2xl font-medium">Expectations</h2>  
                 <div className="bg-main-red w-24 h-1 mt-6 mb-8"></div>
-                <ul className="list-inside list-disc">
+                <ul className="list-outside list-disc">
                     <li className="font-normal pb-4">Perform pre-and post-trip safety inspections </li>
                     
                     <li className="font-normal pb-4">Maintain and clean equipment regularly </li>
@@ -46,7 +46,7 @@ const Table = () => {
             <div className="md:px-8 pb-16 md:pb-0 ">
                 <h2 className="text-2xl font-medium">Requirements</h2>  
                 <div className="bg-main-red w-24 h-1 mt-6 mb-8"></div>
-                <ul className="list-inside list-disc">
+                <ul className="list-outside list-disc">
                     <li className="font-normal pb-4">2 year of Class A driving experience </li>
                     
                     <li className="font-normal pb-4">Valid Class A, Commercial Driver’s License</li>
@@ -72,7 +72,7 @@ const Table = () => {
             <div className="md:px-8">
                 <h2 className=" text-2xl font-medium">Benefits</h2>  
                 <div className="bg-main-red w-24 h-1 mt-6 mb-8"></div>
-                <ul className="list-inside list-disc">
+                <ul className="list-outside list-disc">
                     <li className="font-normal pb-4">Starting pay $.60 per mile </li>
                     
                     <li className="font-normal pb-4">Great Pay – Steady Work – New Equipment</li>
