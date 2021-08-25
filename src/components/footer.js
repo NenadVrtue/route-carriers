@@ -6,32 +6,30 @@ const Footer = () => {
     return (
         <footer className="bg-main-blue w-full text-white pt-12 flex flex-col  items-center">
             <div className="flex flex-col space-y-4 sm:grid sm:grid-cols-2 lg:grid-cols-4 max-w-7xl mx-auto pb-11">
-                <div className="flex flex-col items-end mr-4 sm:pb-8 lg:pb-0 ">
+                <div className="flex flex-col items-start mr-4 sm:pb-8 lg:pb-0 justify-between">
                     <StaticImage
                     src="../images/logo-transparent.png"
                     alt="logo"
                     className="w-56 ">
                         
                     </StaticImage>
-                    <div className="space-x-6  mt-10 ">
-                        <a href="#">
+                    <div className="space-x-6 flex ml-20 md:ml-8 mt-10 ">
+                        <a href="https://www.facebook.com/routecarriers" target="_blank" rel="noreferrer">
                             <StaticImage src="../images/fb-icon.png" alt="facebook icon"></StaticImage>
                         </a>
-                         <a href="#">
-                            <StaticImage src="../images/tw-icon.png" alt="twitter icon"></StaticImage>
-                        </a>
-                         <a href="#">
-                            <StaticImage src="../images/ln-icon.png" alt="linked in icon"></StaticImage>
-                        </a>
-                         <a href="#">
+                         
+                    
+                         <a href="https://www.instagram.com/routecarriers/" target="_blank" rel="noreferrer">
                             <StaticImage src="../images/ig-icon.png" alt="instagram icon"></StaticImage>
                         </a>
                     </div>
                 </div>
-                <div className="flex flex-col justify-between items-center md:pl-16 pt-4 sm:pt-0 sm:pb-8 sm:pl-6 lg:pb-0">
+                <div className="flex flex-col justify-between items-center space-y-2 md:pl-16 pt-4 sm:pt-0 sm:pb-8 sm:pl-6 lg:pb-0">
                     <Link to="/" className="uppercase font-body font-medium" activeClassName="font-bold">Home</Link>
                     <Link to="/company" className="uppercase font-body font-medium" activeClassName="font-bold" >Company</Link>
                     <Link to="/careers" className="uppercase font-body font-medium" activeClassName="font-bold" >Careers</Link>
+                      <Link to="/privacy-policy" className="uppercase font-body font-medium" activeClassName="font-bold" >Privacy Policy</Link>
+                    
                 </div>
 
                 <div className="flex flex-col justify-between items-center ">
