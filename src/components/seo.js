@@ -89,7 +89,7 @@ const query = graphql`
         titleTemplate
         defaultDescription: description
         siteUrl
-        defaultImage: image
+        image
         
       }
     }
