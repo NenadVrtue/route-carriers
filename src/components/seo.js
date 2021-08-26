@@ -53,7 +53,7 @@ function Seo({ description, lang, meta, title }) {
           // You should ideally replace the hardcoded URL below with a value you set
           // in your gatsby-config.js file.  And import all shared site metadata into
           // this component with the useStaticQuery hook.
-          content: `http://localhost:8000/${ogImage}`,
+          content: `https://hopeful-ramanujan-3385e7.netlify.app//${ogImage}`,
         },
         {
           property: `og:description`,
