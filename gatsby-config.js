@@ -4,7 +4,7 @@ module.exports = {
     description: `Route Carriers transportation and logistics services! `,
     author: `liberte tech and vrtue digital`,
     siteUrl: `https://routecarriers.com`,
-    image: `/images/OG.png`,
+    image: "/OG.png",
     titleTemplate: `%s | Route Carriers`,
   },
   plugins: [
