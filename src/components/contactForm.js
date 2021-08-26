@@ -1,12 +1,13 @@
 import React from 'react'
 import { Formik, Form, Field , ErrorMessage} from 'formik'
 
-const encode = (data) => {
+
+const ContactForm = () => {
+    const encode = (data) => {
   return Object.keys(data)
     .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
     .join("&");
 }
-const ContactForm = () => {
     return (
         <section className="py-20 flex flex-col items-center max-w-2xl mx-auto">
 
