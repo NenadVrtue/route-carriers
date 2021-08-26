@@ -30,7 +30,7 @@ const ContactForm = () => {
                 body: encode({ "form-name": "contact", ...values })
                 })
                 .then(() => {
-                alert('Success');
+                alert('Thank you for contacting us! We will get back to you!');
                 actions.resetForm()
                 })
                 .catch(() => {
