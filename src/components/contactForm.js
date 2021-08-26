@@ -59,55 +59,36 @@ const ContactForm = () => {
                 <Form className="font-body px-2 w-full my-8 flex flex-col" name="contact-demo" data-netlify={true}>
                     <div className="flex flex-col mb-4">
                         <label className="text-base w-full text-body text-main-blue mb-4" htmlFor='name'>Full Name:</label>
-                        <Field className=" border-2 border-main-blue py-2" name='name' />
+                        <Field className=" border-2 border-main-blue px-2 py-2 focus:outline-none focus:border-main-red focus:ring-1 focus:ring-main-red" name='name' />
                         <ErrorMessage name="name" />
                     </div>
 
                     <div className="flex flex-col mb-4">
                         <label className="text-base w-full text-body text-main-blue mb-4" htmlFor='phone'>Phone:</label>
-                        <Field className=" border-2 border-main-blue py-2" name='phone' />
+                        <Field className=" border-2 border-main-blue px-2 py-2 focus:outline-none focus:border-main-red focus:ring-1 focus:ring-main-red" name='phone' />
                         <ErrorMessage name="phone" />
                     </div>
                     
-
-                    <label htmlFor='email'>Email:</label>
-                    <Field name='email' />
+                    <div  className="flex flex-col mb-4">
+                    <label className="text-base w-full text-body text-main-blue mb-4" htmlFor='email'>Email:</label>
+                    <Field className=" border-2 border-main-blue py-2 px-2 focus:outline-none focus:border-main-red focus:ring-1 focus:ring-main-red" name='phone' name='email' />
                     <ErrorMessage name="email" />
+                    </div>
 
-                    <label htmlFor='message'>Message:</label>
-                    <Field name='message' component='textarea' />
+                    <div className="flex flex-col mb-4">
+                    <label className="text-base w-full text-body text-main-blue mb-4" htmlFor='message'>Message:</label>
+                    <Field className=" border-2 border-main-blue py-2 px-2 focus:outline-none focus:border-main-red focus:ring-1 focus:ring-main-red" name='message' component='textarea' />
                     <ErrorMessage name="message" />
+                    </div>
 
-                    <button type='submit'>Send</button>
+                    <button className="w-4/5 sm:w-48 flex items-center justify-center px-4 py-1 border-4 border-main-red text-sub font-medium font-body text-white bg-main-red hover:bg-main-red-hover hover:border-main-red-hover  mt-4 " type='submit'>Send</button>
 
                 </Form>
 
 
                 </Formik>
 
-           <form className="font-body px-2 w-full my-8" name="Contact Form" method="POST" data-netlify="true">
-            <input type="hidden" name="form-name" value="Contact Form" required/>
-            <div className="flex flex-col mb-4">
-                <label className="text-base w-full text-body text-main-blue mb-4">Full Name</label>
-                <input className=" border-2 border-main-blue" type="text" name="Full Name" />
-            </div>
-            <div className="flex flex-col mb-4">
-                <label className="text-base w-full text-body text-main-blue mb-4">Phone</label>
-                <input className=" border-2 border-main-blue" type="text" name="Phone Number" />
-            </div>
-            <div className="flex flex-col mb-4">
-                <label className="text-base w-full text-body text-main-blue mb-4">Email</label>
-                <input className=" border-2 border-main-blue" type="email" name="email" />
-            </div>
-            <div className="flex flex-col mb-6">
-                <label className="text-base w-full text-body text-main-blue mb-4">Message</label>
-                <textarea className="border-2 border-main-blue " name="message" />
-            </div>
-            <button className="w-4/5 sm:w-48 flex items-center justify-center px-4 py-1 border-4 border-main-red text-sub font-medium font-body text-white bg-main-red hover:bg-main-red-hover hover:border-main-red-hover   " type="submit">
-                Submit
-            </button>
-        </form>
-            
+           
         </section>
     )
 }
