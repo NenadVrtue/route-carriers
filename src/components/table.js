@@ -3,8 +3,8 @@ import { StaticImage } from 'gatsby-plugin-image'
 
 const Table = () => {
     return (
-        <section className="  relative px-8 py-16 bg-main-blue text-white font-body ">
-           <div className="absolute hidden lg:block  -bottom-16 right-0 " data-sal="slide-left"
+        <section className=" overflow-hidden relative px-8 py-16 mb-16 bg-main-blue text-white font-body ">
+           <div className="absolute hidden lg:block  bottom-0 right-0 " data-sal="slide-left"
             data-sal-delay="500"
              data-sal-easing="ease"
              data-sal-duration= "700"
