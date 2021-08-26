@@ -19,7 +19,6 @@ const ContactForm = () => {
             <Formik 
                 initialValues={{
                 name: '',
-                phone: '',
                 email: '',
                 message: '',
                 }}
@@ -43,58 +42,64 @@ const ContactForm = () => {
                 const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
                 const errors = {};
                 if(!values.name) {
-                errors.name = '* Your Full Name is Required'
+                errors.name = 'Name Required'
                 }
-                if(!values.phone) {
-                errors.phone = '* Your Phone is Required'
-                } 
                 if(!values.email || !emailRegex.test(values.email)) {
-                errors.email = '* Valid Email Required'
+                errors.email = 'Valid Email Required'
                 } 
                 if(!values.message) {
-                errors.message = '* Message Required'
+                errors.message = 'Message Required'
                 }
                 return errors;
                 }}>
-                <Form className="font-body px-2 w-full my-8 flex flex-col" name="contact-demo" data-netlify={true}data-netlify-recaptcha={true}>
+                <Form className="font-body px-2 w-full my-8 flex flex-col" name="contact-demo" data-netlify={true}>
                     <div className="flex flex-col mb-4">
                         <label className="text-base w-full text-body text-main-blue mb-4" htmlFor='name'>Full Name:</label>
-                        <Field className=" border-2 border-main-blue py-2 px-2 focus:outline-none focus:border-main-red focus:ring-1 focus:ring-main-red " name='name' />
-                        <ErrorMessage component="div" className="text-main-red  mt-2" name="name" />
+                        <Field className=" border-2 border-main-blue py-2" name='name' />
+                        <ErrorMessage name="name" />
                     </div>
 
-                     <div className="flex flex-col mb-4">
-                        <label className="text-base w-full text-body text-main-blue mb-4" htmlFor='phone'>Phone:</label>
-                        <Field className=" border-2 border-main-blue py-2 px-2 focus:outline-none focus:border-main-red focus:ring-1 focus:ring-main-red " name='phone' />
-                        <ErrorMessage component="div" className="text-main-red  mt-2" name="phone" />
-                    </div>
+                    <div className="bg-main-red w-24 h-2 my-7 mx-auto"></div>
 
-                    
-                    <div className="flex flex-col mb-4">
-                        <label className="text-base w-full text-body text-main-blue mb-4" htmlFor='email'>Email:</label>
-                        <Field className=" border-2 border-main-blue py-2 px-2 focus:outline-none focus:border-main-red focus:ring-1 focus:ring-main-red " name='email' />
-                        <ErrorMessage component="div" className="text-main-red  mt-2" name="email" />
-                    </div>
-                    
-                    <div className="flex flex-col mb-4">
-                        <label className="text-base w-full text-body text-main-blue mb-4" htmlFor='message'>Message:</label>
-                        <Field className=" border-2 border-main-blue py-2 px-2 focus:outline-none focus:border-main-red focus:ring-1 focus:ring-main-red " name='message' component='textarea' />
-                        <ErrorMessage component="div" className="text-main-red  mt-2" name="message" />
-                    </div>
+                    <label htmlFor='email'>Email:</label>
+                    <Field name='email' />
+                    <ErrorMessage name="email" />
 
-                    <div data-netlify-recaptcha={true}></div>
+                    <label htmlFor='message'>Message:</label>
+                    <Field name='message' component='textarea' />
+                    <ErrorMessage name="message" />
 
-                    <button className="w-4/5 sm:w-48 flex items-center justify-center px-4 py-1 border-4 border-main-red text-sub font-medium font-body text-white bg-main-red hover:bg-main-red-hover hover:border-main-red-hover  mt-4 " type='submit'>Submit</button>
+                    <button type='submit'>Send</button>
 
                 </Form>
 
 
                 </Formik>
 
-           
+           <form className="font-body px-2 w-full my-8" name="Contact Form" method="POST" data-netlify="true">
+            <input type="hidden" name="form-name" value="Contact Form" required/>
+            <div className="flex flex-col mb-4">
+                <label className="text-base w-full text-body text-main-blue mb-4">Full Name</label>
+                <input className=" border-2 border-main-blue" type="text" name="Full Name" />
+            </div>
+            <div className="flex flex-col mb-4">
+                <label className="text-base w-full text-body text-main-blue mb-4">Phone</label>
+                <input className=" border-2 border-main-blue" type="text" name="Phone Number" />
+            </div>
+            <div className="flex flex-col mb-4">
+                <label className="text-base w-full text-body text-main-blue mb-4">Email</label>
+                <input className=" border-2 border-main-blue" type="email" name="email" />
+            </div>
+            <div className="flex flex-col mb-6">
+                <label className="text-base w-full text-body text-main-blue mb-4">Message</label>
+                <textarea className="border-2 border-main-blue " name="message" />
+            </div>
+            <button className="w-4/5 sm:w-48 flex items-center justify-center px-4 py-1 border-4 border-main-red text-sub font-medium font-body text-white bg-main-red hover:bg-main-red-hover hover:border-main-red-hover   " type="submit">
+                Submit
+            </button>
+        </form>
             
         </section>
     )
 }
-
 export default ContactForm
