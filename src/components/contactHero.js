@@ -1,6 +1,7 @@
 import React from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
 import {Link} from 'gatsby'
+import { AnchorLink } from "gatsby-plugin-anchor-links";
 
 const ContactHero = () => {
     return (
@@ -37,24 +38,7 @@ const ContactHero = () => {
               
               
                 
-                 <div className="mt-9 sm:mt-10 sm:flex  lg:justify-start">
-                <div className="rounded-md shadow">
-                  <Link 
-                  to="/apply-now"
-                  className="w-4/5 sm:w-48 flex items-center justify-center px-4 py-1 border-4 border-main-red text-sub font-medium font-body text-white bg-main-red hover:bg-main-red-hover hover:border-main-red-hover   "
-                  >
-                    Apply Now
-                 </Link>
-                </div>
-                <div className="mt-3 sm:mt-0 sm:ml-3">
-                  <Link
-                    to="/company"
-                    className="w-4/5 sm:w-48 flex items-center justify-center px-4 py-1 border-4 border-main-red text-sub font-medium font-body text-white hover:bg-main-red-hover hover:border-main-red-hover   "
-                  >
-                    Learn More
-                  </Link>
-                </div>
-            </div>
+                 
                
             
             </div>

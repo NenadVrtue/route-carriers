@@ -32,10 +32,10 @@ const Footer = () => {
                     
                 </div>
 
-                <div className="flex flex-col justify-between items-center ">
+                <div className="flex flex-col  items-center ">
                      <Link to="/contact" className="uppercase font-body font-bold" activeClassName="font-bold">Contact</Link>
-                     <p className="font-body font-bold">+123 456 789</p>
-                     <p className="font-body font-bold">hello@routecarriers.com</p>
+                    
+                     <p className="mt-2 font-body font-bold">info@routecarriers.com</p>
                 </div>
 
                 <div className="flex flex-col justify-between items-center sm:pl-16">

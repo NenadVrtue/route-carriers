@@ -1,6 +1,7 @@
 import React from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
 import {Link} from 'gatsby'
+import { AnchorLink } from 'gatsby-plugin-anchor-links'
 
 const CareerHero = () => {
     return (
@@ -46,12 +47,12 @@ const CareerHero = () => {
                  </Link>
                 </div>
                 <div className="mt-3 sm:mt-0 sm:ml-3">
-                  <Link
-                    to="/company"
-                    className="w-4/5 sm:w-48 flex items-center justify-center px-4 py-1 border-4 border-main-red text-sub font-medium font-body text-white hover:bg-main-red-hover hover:border-main-red-hover   "
+                  <AnchorLink
+                    to="/careers#cdl"
+                    className="w-4/5 sm:w-48 flex items-center justify-center px-4 py-1 border-4 border-main-red text-sub font-medium font-body text-white hover:bg-main-red-hover hover:border-main-red-hover "
                   >
                     Learn More
-                  </Link>
+                  </AnchorLink>
                 </div>
             </div>
             </div>

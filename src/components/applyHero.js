@@ -1,6 +1,6 @@
 import React from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
-import {Link} from 'gatsby'
+
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 
 const ApplyHero = () => {
@@ -44,7 +44,7 @@ const ApplyHero = () => {
                 <div className="mt-9 sm:mt-10 sm:flex  lg:justify-start">
                 <div className="rounded-md shadow">
                   <AnchorLink
-                  to="#apply"
+                  to="/apply-now#apply"
                   className="w-4/5 sm:w-48 flex items-center justify-center px-4 py-1 border-4 border-main-red text-sub font-medium font-body text-white bg-main-red hover:bg-main-red-hover hover:border-main-red-hover ">
     <span>Apply Now!</span>
   </AnchorLink>
