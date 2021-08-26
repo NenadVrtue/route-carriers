@@ -24,7 +24,7 @@ function ContactForm2() {
         fetch("/", {
           method: "POST",
           headers: { "Content-Type": "application/x-www-form-urlencoded" },
-          body: encode({ "form-name": "contact-demo", ...values })
+          body: encode({ "form-name": "contact-demo2", ...values })
         })
         .then(() => {
           alert('Success');
@@ -51,7 +51,7 @@ function ContactForm2() {
       return errors;
     }}
   >
-    <Form name="contact-demo" data-netlify={true}>
+    <Form name="contact-demo-2" data-netlify={true}>
     
                     <div className="flex flex-col mb-4">
                         <label className="text-base w-full text-body text-main-blue mb-4" htmlFor='name'>Full Name:</label>
