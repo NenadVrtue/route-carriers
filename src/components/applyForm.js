@@ -86,6 +86,21 @@ const ApplyForm = () => {
                     
                     <div className="border-b-2 border-dashed border-main-red my-14"></div>
 
+
+                    <div className=" w-full text-body text-white mb-6 text-xl" id="age-group">Are you at least 23 years of age?</div>
+                        <div role="group" aria-labelledby="age-group">
+                         <label className="text-white font-body ">
+                            <Field className="rounded-none text-main-red mr-2" type="radio" name="age" value="Yes" />
+                            Yes, I Am
+                            </label>
+                            <label className="text-white font-body ">
+                            <Field className="rounded-none text-main-red ml-6 mr-2" type="radio" name="age" value="No" />
+                            No, I Am Not
+                            </label> 
+                    </div>
+
+
+
                     <button className="w-4/5 sm:w-48 flex items-center justify-center px-4 py-1 border-4 border-main-red text-sub font-medium font-body text-white bg-main-red hover:bg-main-red-hover hover:border-main-red-hover  mt-4 " type='submit'>Send</button>
 
                 </Form>
