@@ -19,6 +19,7 @@ const ContactForm = () => {
             <Formik 
                 initialValues={{
                 name: '',
+                phone: '',
                 email: '',
                 message: '',
                 }}
@@ -44,6 +45,9 @@ const ContactForm = () => {
                 if(!values.name) {
                 errors.name = 'Name Required'
                 }
+                if(!values.phone) {
+                errors.phone = 'Phone Required'
+                }
                 if(!values.email || !emailRegex.test(values.email)) {
                 errors.email = 'Valid Email Required'
                 } 
@@ -59,7 +63,12 @@ const ContactForm = () => {
                         <ErrorMessage name="name" />
                     </div>
 
-                    <div className="bg-main-red w-24 h-2 my-7 mx-auto"></div>
+                    <div className="flex flex-col mb-4">
+                        <label className="text-base w-full text-body text-main-blue mb-4" htmlFor='phone'>Phone:</label>
+                        <Field className=" border-2 border-main-blue py-2" name='phone' />
+                        <ErrorMessage name="phone" />
+                    </div>
+                    
 
                     <label htmlFor='email'>Email:</label>
                     <Field name='email' />
