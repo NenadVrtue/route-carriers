@@ -35,6 +35,7 @@ module.exports = {
     `gatsby-plugin-gatsby-cloud`,
     'gatsby-plugin-postcss',
    
+   
 {
       resolve: `gatsby-plugin-webfonts`,
       options: {
