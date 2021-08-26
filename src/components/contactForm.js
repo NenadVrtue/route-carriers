@@ -27,7 +27,7 @@ const ContactForm = () => {
                 fetch("/", {
                 method: "POST",
                 headers: { "Content-Type": "application/x-www-form-urlencoded" },
-                body: encode({ "form-name": "contact-demo", ...values })
+                body: encode({ "form-name": "contact", ...values })
                 })
                 .then(() => {
                 alert('Success');
@@ -56,7 +56,7 @@ const ContactForm = () => {
                 }
                 return errors;
                 }}>
-                <Form className="font-body px-2 w-full my-8 flex flex-col" name="contact-demo" data-netlify={true}>
+                <Form className="font-body px-2 w-full my-8 flex flex-col" name="contact" data-netlify={true}>
                     <div className="flex flex-col mb-4">
                         <label className="text-base w-full text-body text-main-blue mb-4" htmlFor='name'>Full Name:</label>
                         <Field className=" border-2 border-main-blue px-2 py-2 focus:outline-none focus:border-main-red focus:ring-1 focus:ring-main-red" name='name' />
@@ -66,19 +66,19 @@ const ContactForm = () => {
                     <div className="flex flex-col mb-4">
                         <label className="text-base w-full text-body text-main-blue mb-4" htmlFor='phone'>Phone:</label>
                         <Field className=" border-2 border-main-blue px-2 py-2 focus:outline-none focus:border-main-red focus:ring-1 focus:ring-main-red" name='phone' />
-                        <ErrorMessage name="phone" />
+                        <ErrorMessage component="div" className="text-main-red  mt-2" name="phone" />
                     </div>
                     
                     <div  className="flex flex-col mb-4">
                     <label className="text-base w-full text-body text-main-blue mb-4" htmlFor='email'>Email:</label>
                     <Field className=" border-2 border-main-blue py-2 px-2 focus:outline-none focus:border-main-red focus:ring-1 focus:ring-main-red" name='phone' name='email' />
-                    <ErrorMessage name="email" />
+                    <ErrorMessage component="div" className="text-main-red  mt-2" name="email" />
                     </div>
 
                     <div className="flex flex-col mb-4">
                     <label className="text-base w-full text-body text-main-blue mb-4" htmlFor='message'>Message:</label>
                     <Field className=" border-2 border-main-blue py-2 px-2 focus:outline-none focus:border-main-red focus:ring-1 focus:ring-main-red" name='message' component='textarea' />
-                    <ErrorMessage name="message" />
+                    <ErrorMessage component="div" className="text-main-red  mt-2" name="message" />
                     </div>
 
                     <button className="w-4/5 sm:w-48 flex items-center justify-center px-4 py-1 border-4 border-main-red text-sub font-medium font-body text-white bg-main-red hover:bg-main-red-hover hover:border-main-red-hover  mt-4 " type='submit'>Send</button>
