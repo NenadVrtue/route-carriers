@@ -25,6 +25,12 @@ const ApplyForm = () => {
                 email: '',
                 address: '',
                 phone: '',
+                age23:'no',
+                exp:'no',
+                start: [],
+                accidents: '',
+                violations: '',
+                consent: '',
                 }}
                 onSubmit={(values, actions) => {
                 fetch("/", {
@@ -57,9 +63,22 @@ const ApplyForm = () => {
                 if(!values.address) {
                 errors.address = '* Adress Required'
                 }
+                if(!values.age23) {
+                errors.age23 = '* Your age'
+                }
+                if(!values.exp) {
+                errors.exp = '* Your experience'
+                }
+                if(!values.start) {
+                errors.start = '* When can you start'
+                }
+
+                if(!values.accidents) {
+                errors.accidents = '* How many accidents?'
+                }
                 return errors;
                 }}>
-                <Form className="font-body px-2 w-full my-8 flex flex-col" name="apply" data-netlify={true}>
+                <Form className="font-body px-2 w-full my-8 flex flex-col " name="apply" data-netlify={true}>
                     <div className="flex flex-col mb-4">
                         <label className="text-base w-full text-body text-white mb-4" htmlFor='name'>Full Name <span className="text-main-red"> *</span></label>
                         <Field className=" border-2 border-main-blue px-2 py-2 focus:outline-none focus:border-main-red focus:ring-1 focus:ring-main-red" name='name' />
@@ -87,7 +106,7 @@ const ApplyForm = () => {
                     <div className="border-b-2 border-dashed border-main-red my-14"></div>
 
 
-                    <div className=" w-full text-body text-white mb-6 text-xl" id="age-group">Are you at least 23 years of age?</div>
+                    <div className=" w-full text-body text-white mb-6 text-xl" id="age-group">Are you at least 23 years of age? <span className="text-main-red"> *</span></div>
                         <div role="group" aria-labelledby="age-group">
                          <label className="text-white font-body ">
                             <Field className="rounded-none text-main-red mr-2" type="radio" name="age23" value="Yes" />
@@ -97,11 +116,12 @@ const ApplyForm = () => {
                             <Field className="rounded-none text-main-red ml-6 mr-2" type="radio" name="age23" value="No" />
                             No, I Am Not
                             </label> 
+                            
                     </div>
 
                     <div className="border-b-2 border-dashed border-main-red my-14"></div>
 
-                    <div className=" w-full text-body text-white mb-6 text-xl " id="exp-group">I have experience in*</div>
+                    <div className=" w-full text-body text-white mb-6 text-xl " id="exp-group">I have experience in<span className="text-main-red"> *</span></div>
                         <div role="group" aria-labelledby="exp-group">
                         <label className="text-white font-body ">
                             <Field className="rounded-none text-main-red mr-2" type="checkbox" name="exp" value="Dry Van" />
@@ -122,10 +142,91 @@ const ApplyForm = () => {
                             <Field className="rounded-none text-main-red ml-6 mr-2" type="checkbox" name="exp" value="HAZMAT" />
                             HAZMAT
                         </label> 
-          </div>
+                    </div>
+
+                    <div className="border-b-2 border-dashed border-main-red my-14"></div>
+
+                    <div className=" w-full text-body text-white mb-6 text-xl " id="start-group">When can you start?<span className="text-main-red"> *</span></div>
+                        <div role="group" aria-labelledby="start-group">
+                        <label className="text-white font-body ">
+                            <Field className="rounded-none text-main-red mr-2" type="radio" name="start" value="Right away" />
+                            Right away
+                        </label>
+
+                        <label className="text-white font-body ">
+                            <Field className="rounded-none text-main-red ml-6 mr-2" type="radio" name="start" value="in 2 weeks" />
+                            Within 2 weeks
+                        </label>
+            
+                        <label className="text-white font-body ">
+                            <Field className="rounded-none text-main-red ml-6 mr-2" type="radio" name="start" value="month" />
+                            Within a month
+                        </label> 
+
+                        <label className="text-white font-body ">
+                            <Field className="rounded-none text-main-red ml-6 mr-2" type="radio" name="start" value="2 months +" />
+                            2 months +
+                        </label> 
+                    </div>
+
+                    <div className="border-b-2 border-dashed border-main-red my-14"></div>
 
 
-                    <button className="w-4/5 sm:w-48 flex items-center justify-center px-4 py-1 border-4 border-main-red text-sub font-medium font-body text-white bg-main-red hover:bg-main-red-hover hover:border-main-red-hover  mt-4 " type='submit'>Send</button>
+                    <div className=" w-full text-body text-white mb-6 text-xl " id="accidents-group">Number of accidents in the last 3 years<span className="text-main-red"> *</span></div>
+                        <div role="group" aria-labelledby="accidents-group">
+                        <label className="text-white font-body ">
+                            <Field className="rounded-none text-main-red mr-2" type="radio" name="accidents" value="None" />
+                            None
+                        </label>
+
+                        <label className="text-white font-body ">
+                            <Field className="rounded-none text-main-red ml-6 mr-2" type="radio" name="accidents" value="One" />
+                            One
+                        </label>
+            
+                        <label className="text-white font-body ">
+                            <Field className="rounded-none text-main-red ml-6 mr-2" type="radio" name="accidents" value="Two" />
+                            Two
+                        </label> 
+                    </div>
+
+                    <div className="border-b-2 border-dashed border-main-red my-14"></div>
+
+                     <div className=" w-full text-body text-white mb-6 text-xl " id="violations-group">Number of violations in the last 3 years<span className="text-main-red"> *</span></div>
+                        <div role="group" aria-labelledby="violations-group">
+                        <label className="text-white font-body ">
+                            <Field className="rounded-none text-main-red mr-2" type="radio" name="violations" value="None" />
+                            None
+                        </label>
+
+                        <label className="text-white font-body ">
+                            <Field className="rounded-none text-main-red ml-6 mr-2" type="radio" name="violations" value="One" />
+                            One
+                        </label>
+            
+                        <label className="text-white font-body ">
+                            <Field className="rounded-none text-main-red ml-6 mr-2" type="radio" name="violations" value="Two" />
+                            Two
+                        </label> 
+                    </div>
+
+                    <div className="border-b-2 border-dashed border-main-red my-14"></div>
+
+                    <div className=" w-full text-body text-white mb-6 text-xl " id="consent">Consent<span className="text-main-red"> *</span></div>
+                    <div>
+                    <label className="text-white font-body ">
+                    <Field className="rounded-none text-main-red  mr-4" type="checkbox" name="consent" />
+                        I agree with the privacy policy
+                     </label>
+                     <p className="font-body text-normal text-white mt-4">I hereby consent to the collection, processing, and use of my personal data as required for the execution
+                        of the pre-qualification process.</p>
+                     </div>
+
+                    <div className="border-b-2 border-dashed border-main-red my-14"></div>
+
+                    <button className="w-4/5 sm:w-48 flex items-center justify-center px-4 py-1 border-4 border-main-red text-sub font-medium font-body text-white bg-main-red hover:bg-main-red-hover hover:border-main-red-hover mx-auto mt-4 " type='submit'>Send</button>
+
+
 
                 </Form>
 
