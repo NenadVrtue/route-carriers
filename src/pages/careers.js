@@ -10,7 +10,7 @@ import Seo from '../components/seo'
 const Careers = () => {
     return (
         <Layout>
-            <Seo title="Careers" description="This is a meta description"></Seo>
+            <Seo title="Careers" description="Your Career at Route Carriers"></Seo>
             <CareerHero></CareerHero>
             <CdlDrivers></CdlDrivers>
             <Table></Table>

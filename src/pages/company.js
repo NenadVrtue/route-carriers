@@ -9,7 +9,7 @@ import Values from '../components/values'
 const Company = () => {
     return (
         <Layout>
-            <Seo title="Company" description="This is a meta description"></Seo>
+            <Seo title="Company" description="Transportation and logistics Company"></Seo>
 
             <ComHero></ComHero>
 

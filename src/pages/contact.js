@@ -8,7 +8,7 @@ import Layout from '../components/layout'
 const  ContactPage = () => {
     return (
         <Layout>
-            <Seo title="Contact" description="This is a meta description"></Seo>
+            <Seo title='Contact' description='Contact Route Carriers'></Seo>
             <ContactHero></ContactHero>
             <ContactForm></ContactForm>
            

@@ -1,7 +1,6 @@
 import React from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
-import {Link} from 'gatsby'
-import { AnchorLink } from "gatsby-plugin-anchor-links";
+
 
 const ContactHero = () => {
     return (

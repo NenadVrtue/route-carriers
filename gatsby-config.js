@@ -1,9 +1,11 @@
 module.exports = {
   siteMetadata: {
     title: `Route Carriers`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    description: `Route Carriers transportation and logistics services! `,
     author: `liberte tech and vrtue digital`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    siteUrl: `https://routecarriers.com`,
+    image: `/OG.png`,
+    titleTemplate: `%s | Route Carriers`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
