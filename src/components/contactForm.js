@@ -82,8 +82,8 @@ const ContactForm = () => {
                         <ErrorMessage component="div" className="text-main-red  mt-2" name="message" />
                     </div>
 
-                    <div data-netlify-recaptcha="true"></div>
-                    
+                    <div data-netlify-recaptcha={true}></div>
+
                     <button className="w-4/5 sm:w-48 flex items-center justify-center px-4 py-1 border-4 border-main-red text-sub font-medium font-body text-white bg-main-red hover:bg-main-red-hover hover:border-main-red-hover  mt-4 " type='submit'>Submit</button>
 
                 </Form>
