@@ -25,12 +25,12 @@ const ApplyForm = () => {
                 email: '',
                 address: '',
                 phone: '',
-                age23:[],
-                exp: [],
-                start: [],
-                accidents: [],
-                violations: [],
-                consent: [],
+                age23:'',
+                exp:'' ,
+                start:'' ,
+                accidents:'',
+                violations: '',
+                consent: '',
                 }}
                 onSubmit={(values, actions) => {
                 fetch("/", {
