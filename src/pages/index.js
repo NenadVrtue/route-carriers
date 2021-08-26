@@ -10,7 +10,7 @@ import Aredriver from "../components/aredriver"
 
 const IndexPage = () => (
   <Layout>
-    <Seo title="Moving your business forward”" description="Route Carriers transportation and logistics services!" />
+    <Seo title="Moving your business forward" description="Route Carriers transportation and logistics services!" />
     
     <Hero/>
     
