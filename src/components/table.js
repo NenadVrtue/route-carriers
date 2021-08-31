@@ -4,7 +4,7 @@ import { StaticImage } from 'gatsby-plugin-image'
 const Table = () => {
     return (
         <section className="overflow-hidden
-  relative px-8 py-16 bg-main-blue mb-16 text-white font-body ">
+  relative px-8 py-16 bg-main-blue mb-16 pb-20 text-white font-body ">
            <div className="absolute hidden lg:block  bottom-0 right-0 " data-sal="slide-left"
             data-sal-delay="500"
              data-sal-easing="ease"
@@ -74,14 +74,15 @@ const Table = () => {
                 <h2 className=" text-2xl font-medium">Benefits</h2>  
                 <div className="bg-main-red w-24 h-1 mt-6 mb-8"></div>
                 <ul className="list-outside list-disc">
-                    <li className="font-normal pb-4">Starting pay $.60 per mile </li>
+                    <li className="font-normal pb-4">$.60 per mile Solo | $0.75 per mile Team</li>
                     
                     <li className="font-normal pb-4">Great Pay – Steady Work – New Equipment</li>
 
-                    <li className="font-normal pb-4">$1,000 sign-on Bonus </li>
+                    <li className="font-normal pb-4">$2000 sign-on bonus </li>
 
                     <li className="font-normal pb-4">$500 Bonus for Every Driver Referral</li>
-                
+
+                    <li className="font-normal pb-4">No Driver Load/Unload</li>
                      
                 </ul>
             </div>
